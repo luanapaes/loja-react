@@ -13,7 +13,7 @@ function App() {
       <div>
           <h1>Lista de Produtos</h1>
 
-          <ul>
+          <ul>{/*exibir produtos*/}
             {items && items.map((product) => {
               return(
                 <li key={product.id}>
@@ -23,6 +23,22 @@ function App() {
               )
             })}
           </ul>
+
+          <div className='add-product'>
+            <form>
+              <label>
+                Nome do produto:
+                <input type="text" name='name'/>
+              </label>
+
+              <label>
+                Preço do produto:
+                <input type="numebr" name='price'/>
+              </label>
+
+              <input type="submit" value="Add" />
+            </form>
+          </div>
       </div>
     </>
   )

@@ -4,3 +4,24 @@
   text-align: center;
 }
 
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+li{
+  list-style: none;
+  width: 30vw;
+  border: 1px solid #474747;
+  border-radius: 2%;
+  margin: 1% 1% 0;
+  padding: 1%;
+}
+
+
+li img{
+  width: 50%;
+}
+
